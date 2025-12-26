@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useApi } from '../hooks/useApi'
-import type { GameMode, CreateGameRequest } from '../types/game'
+import type { GameMode } from '../types/game'
 
 export function HomePage() {
   const navigate = useNavigate()

@@ -12,6 +12,7 @@ interface Config {
     default_provider: string
     openai: LLMProviderConfig
     anthropic: LLMProviderConfig
+    deepseek?: LLMProviderConfig
     custom: LLMProviderConfig
   }
   game: {

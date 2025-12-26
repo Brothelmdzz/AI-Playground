@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { useApi } from '../hooks/useApi'
 import type { BenchmarkResult } from '../types/game'
 import {
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell
 } from 'recharts'
 
