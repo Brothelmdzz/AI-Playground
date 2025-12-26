@@ -1,5 +1,5 @@
 // ==================== 游戏页面 ====================
-import { useEffect, useState, useCallback } from 'react'
+import { useState, useCallback } from 'react'
 import { useParams } from 'react-router-dom'
 import { useApi } from '../hooks/useApi'
 import { useWebSocket } from '../hooks/useWebSocket'
@@ -26,7 +26,7 @@ export function GamePage() {
     setEvents((prev) => [...prev, event])
   }, [])
 
-  const { isConnected, submitAction, speak } = useWebSocket({
+  const { isConnected, speak } = useWebSocket({
     gameId: gameId!,
     onStateChange: handleStateChange,
     onEvent: handleEvent,

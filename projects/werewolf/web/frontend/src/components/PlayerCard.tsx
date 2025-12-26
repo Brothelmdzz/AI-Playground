@@ -10,7 +10,7 @@ interface PlayerCardProps {
 }
 
 export function PlayerCard({ player, isSelected, onClick, showRole }: PlayerCardProps) {
-  const { name, is_alive, role, faction, player_type } = player
+  const { name, is_alive, role, player_type } = player
 
   const roleColor = role ? ROLE_COLORS[role] || '#6b7280' : '#6b7280'
   const roleIcon = role ? ROLE_ICONS[role] || '❓' : '❓'
